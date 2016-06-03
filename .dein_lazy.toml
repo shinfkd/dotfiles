@@ -30,5 +30,10 @@ on_i = 1
 [[plugins]]
 repo = 'Shougo/unite.vim'
 depends = 'neomru.vim'
+hook_add = '''
+nnoremap <silent> fls :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
+nnoremap <silent> fmr :<C-u>Unite file_mru buffer<CR>
+nnoremap <silent> fbu :<C-u>Unite buffer<CR>
+'''
 # dot fileをfileに表示する
 hook_post_source = 'call unite#custom#source("file", "matchers", "matcher_default")'

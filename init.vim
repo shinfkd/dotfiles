@@ -26,19 +26,18 @@ if dein#check_install()
 endif
 "End dein Scripts-------------------------
 
-"Unite.vim--------------------------------
-nnoremap <silent> fls :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
-nnoremap <silent> fmr :<C-u>Unite file_mru buffer<CR>
-nnoremap <silent> fbu :<C-u>Unite buffer<CR>
-"End Unite.vim----------------------------
-
-"Color------------------------------------
+"View Setting-----------------------------
+" Color
 syntax on
 colorscheme molokai
-
-""
+" Show line number.
 set number
+" Show <TAB> and <CR>
+set list
+set listchars=tab:▸\ ,trail:-,extends:»,precedes:«,nbsp:%
+" Indent
 set tabstop=2
 set shiftwidth=2
-set autoindent
 set expandtab
+set autoindent
+"End View Setting-------------------------
