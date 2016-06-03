@@ -30,3 +30,5 @@ on_i = 1
 [[plugins]]
 repo = 'Shougo/unite.vim'
 depends = 'neomru.vim'
+# dot fileをfileに表示する
+hook_post_source = 'call unite#custom#source("file", "matchers", "matcher_default")'

@@ -27,7 +27,6 @@ endif
 "End dein Scripts-------------------------
 
 "Unite.vim--------------------------------
-call unite#custom#source('file', 'matchers', "matcher_default")
 nnoremap <silent> fls :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
 nnoremap <silent> fmr :<C-u>Unite file_mru buffer<CR>
 nnoremap <silent> fbu :<C-u>Unite buffer<CR>
